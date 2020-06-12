@@ -1,16 +1,24 @@
-#mainTop {
-	position: relative;
-	height: 800px;
-  margin: 0 auto;
-  object-fit: cover;
+.title {
+  width: 100vw;
+  height: 100px;
+  background-color: lightblue;
 }
-#photo1,#photo2,#photo3,#photo4,#photo5 {
+
+
+#main {
+  position: relative;
+  margin: 0 auto;
+  width: 1400px;
+  background-color: lightcyan;
+  display: flex;
+}
+#photo1 img,#photo2 img,#photo3 img,#photo4 img,#photo5 img #photo6 img #photo7 img {
 	position: absolute;
   width: 1200px;
   height: 800px;
   object-fit: cover;
 }
-#photo1 img,#photo2 img,#photo3 img,#photo4 img,#photo5 img {
+#photo1 img,#photo2 img,#photo3 img,#photo4 img,#photo5 img #photo6 img #photo7 img {
 	opacity:0;
 	-moz-animation: imgTrans 30s infinite;
 	-webkit-animation: imgTrans 30s infinite;
@@ -47,6 +55,18 @@
   animation-delay: 24s;
   object-fit: cover;
 }
+#photo6 img {
+	-moz-animation-delay: 30s;
+	-webkit-animation-delay: 30s;
+  animation-delay: 30s;
+  object-fit: cover;
+}
+#photo7 img {
+	-moz-animation-delay: 36s;
+	-webkit-animation-delay: 36s;
+  animation-delay: 36s;
+  object-fit: cover;
+}
 #frame {
   height: 800px;
 	position: relative;
@@ -73,4 +93,11 @@
  20% { opacity:1; }
  25% { opacity:0; } 
  100% { opacity:0; }
+}
+
+.side {
+  &__menu {
+    
+
+  }
 }
